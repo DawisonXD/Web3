@@ -1,0 +1,171 @@
+Week 1 
+
+-Coming up with project ideas:
+
+
+-Picking out a project: My vision on Blockchain Gaming
+
+-Ways of approching the problem: Game developed using Godot and Blockchain technology using Enjin
+
+-Documentation of the subject: Godot Doc, Enjin Doc 
+more on why I choose this?
+Why blockchain?
+
+Benefits of blockchain?
+- huge marketplace without a third-party
+- security?
+- unique gameplay opportunities, unique items
+- 
+
+Week 2
+
+-Writing my Project Proposal
+-Putting togheter all the research done so far
+
+Week 3
+
+-Learning how to make a game using godot
+-- developed a platformer and a 2D game
+-- I learned how to programme in GDScript, which is a phyton like language developed specially for Godot
+--- learned how to use physics, tilemap, how to make new nodes adn set up a new project
+
+Softwares required/used: Godot, EnjinSDK, 
+Programming language: GDScript
+	
+Week 4 
+
+Enjin
+Looking through enjin docs
+Setting up different platforms especially jumpnet and goerli(the way that I am going to procude ETH and ENJ coins)
+--in order to be able to test different futures of my NFTs
+Setting up my virtual wallet and linking it with the project
+
+Week 5
+
+Godot
+Developing my final idea for the game.
+A rogue-like game with a lobby that will act like the main HUB of the game where players will be able to trade items.
+By getting different items this will unlock different levels of the game(common,rare,epic,legendary) and different roles(knight,archer,mage,support)
+
+Week 6
+
+Godot
+Developing the HUB of my game in World. Setting up the Knight and Enemies in Actors. Setting up the Chest in Objects. Setting up Knife in Items.
+Designing the HUB with the TileMap.
+Setting up different collisions and HitBoxs and HurtBoxs.
+
+Week 7
+
+Godot 
+Finishing the Hitbox and HurtBox(took more than expected :)))
+Learning about States and how to set up a StateMachine (http://gameprogrammingpatterns.com/state.html, Game Programming Patterns bu Robert Nystrom)
+
+Week 11
+
+Set up the user interface
+	- the health bar and connected it to the player.
+Setting up the enviroment
+	- properly set up the TileMap assets(collision and navigation)
+	- the first room of the game
+	- set up access doors so they open/close based on signals. In order to set up a basic rogue like floor.
+
+Semester 2
+
+Creating the first room
+	-manually generating it and spawning the monsters in it
+Basic procedual generation 
+	
+Enjin SDK deprecated for Godot engine -- TRACEBACK
+
+Starting using and learning Unity!!
+	Looking at a 2D platformer
+	considering to do one as well
+Since I do not think I have time to re-do the initial idea for the game, I want to use unity in order to proof my concept!
+I am going to demonstrate the functionality:
+	Being on the blockchain using Thirdweb
+	Being able to claim NFTs in order to unlock future content
+
+Using Thirdweb instead of Enjin and Unity insted of Godot.
+
+Thirdweb:
+	-create wallet 
+	-create NFT
+	-use SDK
+	-link asset to game
+	-allow player to claim asset
+	-unlock nect lvl?
+Unity:
+	-create 2D game
+	-add tilemap
+	-add player
+	-add player movement
+	-add world collisions
+	-add a goal
+	
+Another approach:
+
+Blockchain
+
+	using erc721.org - standard implementation of a Smart contract
+		to esily implement this we are using a github repo named OpenZeppelin which we import in our code and gives us a lot of functionalities: ERC721, Ownable(security)
+
+	Smart contracts 
+		initially dont leave on the blockchain so we need to deploy it on the blockchain using remix.ethreum.org for starters in order to test things out. After our smart contract is on the blockchain in order for it to be able to "talk" with the game we will use Metamask.
+		smart contracts are like a state machine that change to diff states.
+		people need to pay a little fee in order to be able to get certain NFTs. 
+
+	remix.etherium.org 
+		browser IDE and solidity compiler so that we can deploy our contarct into a JS virtual enviroment or on the blockchain and actually test the functionality of the contracts and see if everythig works. We first build our contarcts here and then move them to a more stable form 
+
+	check rarity for opening rooms
+		in the swords array look for rarity of sword of certain users(user differenciate by their own Account address)
+
+	minting NFT ??
+		people pay a fee in order to get an NFT and that NFT gets added to their account with cerating characteristics.
+
+Front-end
+
+	using: 
+		react(npx create-react-app my-app), 
+		node.js, 
+		npm, 
+		yarn(redux(state management system), redux-thunk, react-redux, web3(web version 3 that includes blockchain), 
+		styled-components(css), 
+		truffle(truffle init) (truffle migrate --reset)
+			generates contracts, migrations and config
+			copy contract from remix to new contarct by truffle
+			set up migrations -- migrations are async fct that return you and addr and you can use that address of a certain user to check for rarity for example 
+			write test??
+			, 
+		ganache(ganache-cli -d) 
+			generate some fake wallets with ETH in them for testing
+			link wallets to metamask(everytime you try to use those run cmd)
+		state management system(redux)
+			store
+			blockchain
+			basically connects the token to the web
+		
+Styling
+	basic tactic that a lot of people use with react
+	using styled components(basicly react components that we created ourselves)
+		import everything as "s" from globalStyles
+
+Importing data to page
+	using the data folder -- dataActions/dataReducer
+	
+
+
+
+
+
+
+
+
+
+
+
+
+Ref: 
+https://www.youtube.com/watch?v=YSw_YF84F-o&list=PLvfQp12V0hS0DsA6rnucimPB1zTX7to7p&index=2
+https://erc721.org/
+https://github.com/OpenZeppelin/openzeppelin-contracts/
